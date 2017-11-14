@@ -1,7 +1,11 @@
-// Gavin and Nick
+// Step 1 Completed by Gavin Noeldner and Nick Neville
+// Imports a Java Scanner
 import java.util.Scanner;
+// Declared Class Name
 public class chapter6Team {
+	// Main Method
 	public static void main(String[] args) { 
+		// Prints Line of Text
 		System.out.print("Enter a credit card number as a long integer: ");
 			Scanner input = new Scanner(System.in);
 			long cardNumber = input.nextLong();
