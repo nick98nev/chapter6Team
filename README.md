@@ -1,5 +1,0 @@
-// Gavin and Nick
-import java.util.Scanner;
-public class chapter6Team {
-	public static void main(String[] args) { 
-		
