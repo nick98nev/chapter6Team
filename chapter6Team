@@ -1,5 +1,8 @@
-// Gavin and Nick
+// Step 1 completed by Gavin Noeldner and Nick Neville
+// You need a Java Util Scanner for this process.
 import java.util.Scanner;
+// Setting up the Public class to be called chapter6Team
 public class chapter6Team {
+	// Main Method (Void)
 	public static void main(String[] args) { 
-		hey java wtf hey
+		
