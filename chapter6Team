@@ -15,6 +15,7 @@ public class chapter6Team {
 			String num = cardNumber + "";
 			for (int i = getSize(number) - 2; i >= 0; i -= 2) {
 			sum += getDigit(Integer.parseInt(num.charAt(i) + "") * 2);
+			}
+			return sum;
 	}
-	return sum;
 }
