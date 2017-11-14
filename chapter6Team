@@ -18,4 +18,11 @@ public class chapter6Team {
 			}
 			return sum;
 	}
+	public static int getDigit(int number) {
+		if (number < 9)
+			return number;
+		else
+			return number / 10 + number % 10;
+	}
 }
+
