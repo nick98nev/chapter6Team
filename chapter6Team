@@ -18,6 +18,7 @@ public class chapter6Team {
 			}
 			return sum;
 	}
+	// Easton Lopez step 2:
 	public static int getDigit(int number) {
 		if (number < 9)
 			return number;
