@@ -6,17 +6,24 @@ public class chapter6Team {
 	// Main Method
 	public static void main(String[] args) { 
 		// Prints Line of Text
+		int sumOfDoubleEven, sumOfOdd;
 		System.out.print("Enter a credit card number as a long integer: ");
-			Scanner input = new Scanner(System.in);
-			long cardNumber = input.nextLong();
+		Scanner input = new Scanner(System.in);
+		String cardNumber = input.nextLine();
+
+		sumOfDoubleEven = sumOfDoubleEvenPlace(cardNumber);
+		sumOfOdd = sumOfOddPlace(cardNumber);
+
+		//Just check sumOfDoubleEven and sumOfOdd. It will be removed last time
+		System.out.println("sum of double even = " + sumOfDoubleEven +" "+ " sum of odd = " + sumOfOdd);
 	}
-	public static int sumOfDoubleEvenPlace(long number) {
-			int sum = 0;
-			String num = cardNumber + "";
-			for (int i = getSize(number) - 2; i >= 0; i -= 2) {
-			sum += getDigit(Integer.parseInt(num.charAt(i) + "") * 2);
-			}
-			return sum;
+	public static int sumOfDoubleEvenPlace(String cardNumber) {
+		int sum = 0;
+		for (int i = cardNumber.length() - 2; i >= 0; i -= 2) {
+			sum += getDigit((cardNumber.charAt(i) - '0') * 2);
+		}
+		//If we use charAt() - '0', we don't need to make getSize method
+		return sum;
 	}
 	// Easton Lopez step 2:
 	public static int getDigit(int number) {
@@ -24,6 +31,15 @@ public class chapter6Team {
 			return number;
 		else
 			return number / 10 + number % 10;
+	}
+	
+	//step 3 Completed by Donghyun
+	public static int sumOfOddPlace(String cardNumber){
+		int sum = 0;
+		for (int i = cardNumber.length() - 1; i >= 0; i -= 2) {
+			sum += cardNumber.charAt(i) -'0';
+		}
+		return sum;
 	}
 }
 
