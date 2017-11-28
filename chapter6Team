@@ -42,8 +42,7 @@ public class chapter6Team {
 		return sum;
 	}
 	//Step 4 - Dillon Burton
-	public static int sumOfBoth (String cardNumber){
-        int total = sumOfDoubleEvenPlace(cardNumber) + sumOfOddPlace(cardNumber);
-		}		
+	public static int sumOfBoth (String cardNumber) {
+        	int total = sumOfDoubleEvenPlace(cardNumber) + sumOfOddPlace(cardNumber);	
 	}
 }
